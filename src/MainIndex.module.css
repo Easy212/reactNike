@@ -1,0 +1,92 @@
+.index-wrap {
+    position: relative;
+    z-index: 1;
+    padding: 0 3%;
+}
+.main_visual, .content {
+    text-align: center;
+    margin-bottom: 100px;
+}
+.main_img > img {
+    width: 100%;
+}
+
+.content{
+    position: relative;
+}
+
+/* 메인 타이틀 */
+.title_01 {
+    font-size: 2.25em;
+    font-weight: 700;
+    letter-spacing: -1px;
+    padding-top: 30px;
+}
+.title_01_text {
+    font-size: 1em;
+    font-weight: 400;
+    letter-spacing: -0.5px;
+    padding-top: 14px;
+}
+.btn_area {
+    display: flex;
+    justify-content: center;
+}
+.btn_01 {
+    display: block;
+    background-color: #111;
+    color: #fff;
+    font-size: 1em;
+    padding: 6px 22px 7px 22px;
+    border-radius: 18px;
+    margin: 24px 4px 0 4px;
+}
+
+/* 이번주 스타일링 */
+.content_img {
+    display: flex;
+}
+.content_img > .main-img {
+    flex: 1;
+    margin-right: 24px;
+}
+.content_img > .main-img:last-child {
+    margin-right: 0;
+}
+.content_title {
+    text-align: left;
+    font-size: 1.5em;
+    font-weight: 400;
+    margin-bottom: 24px;
+    letter-spacing: -1px;
+}
+
+/* Trending Now */
+.trend_img {
+    position: relative;
+    flex: 1;
+}
+.trend_img:first-child {
+    margin-right: 24px;
+}
+.trend_img > img {
+    width: 100%;
+}
+.trend_text {
+    position: absolute;
+    left: 40px;
+    bottom: 40px;
+}
+.c_white {
+    color: #fff;
+    margin-bottom: 18px;
+}
+.b_white {
+    background-color: #fff;
+    color: #111;
+    margin: 0;
+}
+.trend_img .btn_area {
+    justify-content: flex-start;
+}
+

@@ -1,0 +1,186 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.writeWrap{
+    width: 1024px;
+    margin: 100px auto;
+}
+
+.writeTitle h2, .writeTitle h3{
+    text-align: center;
+}
+
+.writeTitle h3{
+    font-size: 16px;
+    font-weight: 500;
+}
+
+
+.writeContent{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.gradeC{
+    font-size: 24px;
+    display: inline-block; /* 하위 별점 이미지들이 있는 영역만 자리를 차지함.*/
+    direction: rtl; /* 인풋 순서 반전 */
+    text-align: left;
+}
+
+
+
+.gradeC input[type=radio]:checked ~ label{
+    text-shadow: 0 0 0 #000; /* 마우스 클릭 체크 */
+}
+
+.gradeC input[type=radio]{
+    display: none; /* 라디오박스 감춤 */
+}
+.gradeC label{
+    color: transparent; /* 기존 컬러 제거 */
+    text-shadow: 0 0 0 #E7E7E7;; /* 기본색상(호버안됬을때색) */
+    padding: 0 5px;
+}
+
+.gradeC label:hover{
+    text-shadow: 0 0 0 #000; /* 마우스 호버 시 색상 */
+}
+.gradeC label:hover ~ label{
+    text-shadow: 0 0 0 #000; /* 마우스 호버 뒤에오는 별표 색상 */
+}
+
+
+.grade, .review, .reviewTitle, .writeSize, .writeRelax, .writeLife, .writeImg{
+    width: 1024px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 30px 0;
+}
+
+
+.gradeT, .reviewT, .reviewTitleT, .writeSizeT, .writeRelaxT, .writeLifeT, .writeImgT{
+    width: 30%;
+}
+
+.gradeT p, .reviewT p, .reviewTitleT p, .writeSizeT p, .writeRelaxT p, .writeLifeT p, .writeImgT p{
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.gradeC, .reviewC, .reviewTitleC, .writeSizeC, .writeRelaxC, .writeLifeC, .writeImgC{
+    width: 70%;
+}
+
+.reviewC textarea{
+    width: 100%;
+    height: 130px;
+    border: 1px solid #D5D5D5;
+    padding: 10px;
+    word-break:break-all;
+    resize: none;
+}
+
+.reviewInfo p, .reviewTitleInfo p{
+    width: 100%;
+    font-size: 14px;
+    font-weight: 500;
+    color: #8C8C8C;
+    letter-spacing: 0.5px;
+    
+}
+
+.reviewTitleC textarea{
+    width: 100%;
+    height: 70px;
+    border: 1px solid #D5D5D5;
+    padding: 10px;
+    resize: none;
+}
+
+.writeSizeR, .writeRelaxR, .writeLifeR{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: #E7E7E7;
+    border-radius: 5px;
+}
+
+.writeSizeR input[type="radio"]:checked, .writeRelaxR input[type="radio"]:checked, .writeLifeR input[type="radio"]:checked{
+    accent-color:black;
+}
+
+
+
+.radioT{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+}
+
+.space{
+    margin-left: 10px;
+}
+
+.btnUpload{
+    width: 150px;
+    height: 50px;
+    border: 2px solid #000;
+    text-align: center;
+    display: inline-block;
+    
+}
+
+.btnUpload:hover{
+    cursor: pointer;
+}
+
+.btnUpload span{
+    position: relative;
+    top: 10px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.upIcon{
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    position: relative;
+    right: 5px;
+    top: 2px;
+}
+
+#imgUpload{
+    display: none;
+}
+
+.writeRe{
+    width: 1024px;
+}
+
+.writeInfo {
+    width: 100%;
+    text-align: left;
+    margin-bottom: 30px;
+    font-size: 14px;
+    color: #8C8C8C;
+}
+
+.writeSub input{
+    width: 100%;
+    height: 45px;
+    background-color: #000;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.writeSub input:hover{
+    cursor: pointer;
+}

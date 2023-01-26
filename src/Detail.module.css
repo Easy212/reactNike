@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.dWrap{
+    margin: 80px 0 80px;
+    display: flex;
+    width: 1600px;
+    justify-content: center;   
+}
+.recommend{
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* 스위퍼 슬라이드 */
+.swiper-container{
+    width: 1300px;
+    margin: 0 0 80px 135px;
+    justify-content: center;
+    justify-items: center;   
+}
+
+.swiper-container .swiper{
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    justify-items: center;
+    text-align: left;
+}
+
+.swiper-container img{
+    width: 100%;
+}
+
+.swiper-pagination-bullets{
+    margin-top: 100px;
+}
+
+
+.swiper-pagination-fraction{
+    margin-bottom: 50px;
+}

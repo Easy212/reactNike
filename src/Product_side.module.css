@@ -1,0 +1,75 @@
+/* 카테고리 */
+.category{
+    width: 240px;
+    height: 100%;
+    transition: .3s;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.category>div{
+    margin: 0 20px;
+    border-bottom: 2px solid #666;
+}
+
+.category .category_list{
+    padding-bottom: 30px;
+}
+.category .category_con{
+    margin-top: 10px;
+
+}
+.category .category_con #content_btn{
+    display: flex;
+    justify-content: space-between;
+}
+.c_up{
+    display: inline-block;
+    font-size: 24px;
+    text-align: right;
+    float: right;
+}
+
+.c_down{
+    display: none;
+    font-size: 24px;
+    float: right;
+}
+.checkLabel{
+    display: block;
+    margin-bottom: 10px;
+}
+#sex_btn, #price_btn, #color_btn, #brand_btn, #shoesHeight_btn, #sport_btn{
+    display: none;
+}
+
+#sex_btn:checked ~ .form_sex, #price_btn:checked ~ .form_price, #color_btn:checked ~ .form_color, 
+#brand_btn:checked ~ .form_brand, #shoesHeight_btn:checked ~ .form_shoesHeight, #sport_btn:checked ~ .form_sport{
+    /*display: none;*/
+    visibility: hidden;
+    transition: 0.1s;
+    max-height: 0px;
+
+}
+
+#sex_btn:checked ~ .checkLabel>.c_down, #price_btn:checked ~ .checkLabel>.c_down, #color_btn:checked ~ .checkLabel>.c_down, 
+#brand_btn:checked ~ .checkLabel>.c_down, #shoesHeight_btn:checked ~ .checkLabel>.c_down, #sport_btn:checked ~ .checkLabel>.c_down{
+    display: inline-block;
+}
+
+#sex_btn:checked ~ .checkLabel>.c_up, #price_btn:checked ~ .checkLabel>.c_up, #color_btn:checked ~ .checkLabel>.c_up, 
+#brand_btn:checked ~ .checkLabel>.c_up, #shoesHeight_btn:checked ~ .checkLabel>.c_up, #sport_btn:checked ~ .checkLabel>.c_up{
+    display: none;
+}
+
+.category .category_con form{
+    display: flex;
+    flex-direction: column;
+    font-size: .8em;
+    overflow: hidden;
+    margin-bottom: 10px;
+    visibility: visible;
+    max-height: 1000px;
+    transition: all .1s;
+
+}

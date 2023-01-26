@@ -1,0 +1,65 @@
+.reviewContent{
+    border-top: 1px solid #ccc;
+    border-bottom: 0.5px solid #ccc;
+    padding: 30px 0;
+    margin: 0 auto;
+    width: 1260px;
+    display: flex;
+}
+
+.rvLeft{
+    width: 30%;
+}
+
+.rvLeft .lRating{
+    margin-bottom: -20px;
+}
+
+.rvLeft .lRating>p{
+    color: #000;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+
+.rvLeft div{
+    margin-bottom: 30px;   
+}
+
+.rvLeft div p{
+    display: inline-block;
+    font-size: 14px;
+    margin: 15px 0;
+    color: #8C8C8C;
+}
+
+.rvLeft div span{
+    display: inline-block;
+    font-size: 14px;
+
+}
+
+.rvRight{
+    margin-left: 80px;
+    width: 70%;
+}
+
+.rvContent{
+    width: 300px;
+}
+
+.rvContent h4{
+    font-size: 20px;
+    font-weight: bold;
+    margin: 5px 0;
+}
+
+.rvContent p{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 32px;
+}
+
+.rvDate{
+    font-size: 10px;
+    color: #8C8C8C;
+}

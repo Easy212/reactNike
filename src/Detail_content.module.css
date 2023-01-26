@@ -1,0 +1,206 @@
+.detailRight{
+    width: 450px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.detailTitle, .detailSize, .shoppingBasket, .wish, .detailInfo, .delivery, .reviews, .addInfo{
+    width: 380px;
+    text-align: left;
+}
+
+.detailTitle{
+    margin-bottom: 20px;
+}
+
+.detailTitle h2{
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.detailTitle h3{
+    font-size: 16px;
+}
+
+.detailTitle p{
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.size th{
+    padding: 10px 0;
+}
+.size td{
+    padding: 2px;
+}
+
+.size td input{
+    display: none;
+}
+
+.size td label{
+    display: flex;
+    text-align: center;
+    width: 75px;
+    height: 48px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: center;
+}
+
+.size td label:hover{
+    border: 1px solid;
+}
+
+.size td input[type=radio]:checked+label{
+    border: 1px solid;
+}
+
+.size td input[type=radio]:disabled+label{
+    background-color: #F0F0F0;
+    color: #BDBDBD;
+}
+
+
+
+.detailInfo{
+    padding: 50px 0;
+}
+
+.detailInfo p{
+    font-weight: 500;
+    line-height: 28px;
+    
+}
+
+.shoppingBasket{
+    margin: 10px 0;
+}
+
+
+.shoppingBasket button{
+    width: 400px;
+    height: 65px;
+    border-radius: 50px;
+    border-style: none;
+    background-color: #000;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.shoppingBasket button:hover{
+    cursor: pointer;
+    background-color: #747474;
+}
+
+.wish button{
+    width: 400px;
+    height: 65px;
+    border-radius: 50px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    font-weight: bold;
+   
+}
+.wish button:hover{
+    cursor: pointer;
+    border: 1px solid;
+}
+
+.wish img{
+    position: relative;
+    top: 2px;
+    left: 8px;
+    width: 17px;
+    height: 17px;
+
+    display: inline-block;
+}
+
+.delivery, .reviews, .addInfo{
+    border-top: 1px solid #ccc;
+    padding: 5px;
+}
+.addInfo{
+    border-bottom: 1px solid #ccc;
+}
+
+.chLabel{ 
+    font-size: 18.5px;
+    font-weight: bold;
+    cursor: pointer;
+    display: inline-block;
+    width: 100%;
+    line-height: 70px;
+    
+}
+
+#deliveryBtn, #addInfoBtn, #reviewBtn{ 
+    display: none; 
+}
+.deliveryOpen, .addInfoOpen, .reviewOpen{ 
+    visibility: hidden;
+    transition: 0.1s;
+    max-height: 0px;
+    /* display: none; */
+}
+
+.deliveryOpen p, .addInfoOpen p, .reviewOpen p{ 
+    padding: 25px 0;
+    font-weight: 500;
+}
+
+.reviewOpenCon{
+    padding:  20px 0;
+}
+.reviewOpenCon span{
+    margin-right: 10px;
+    font-size: 15px;
+}
+
+.reviewOpen p a{
+    border-bottom: 1px solid;
+    font-weight: bold;
+}
+
+.reviewOpen p a:hover{
+    color: #999;
+}
+
+.up{
+    display: none;
+    font-size: 24px;
+    text-align: right;
+    float: right;
+}
+
+.down{
+    display: inline-block;
+    font-size: 24px;
+    float: right;
+
+}
+
+#deliveryBtn:checked ~ .deliveryOpen, #addInfoBtn:checked ~ .addInfoOpen, #reviewBtn:checked ~ .reviewOpen{ 
+    /*display: block; */
+   visibility: visible;
+   max-height: 1000px;
+   transition: all .5s;
+   
+} 
+
+#deliveryBtn:checked ~ .chLabel>.down, #addInfoBtn:checked ~ .chLabel>.down, #reviewBtn:checked ~ .chLabel>.down{ 
+    display: none; 
+} 
+
+#deliveryBtn:checked ~ .chLabel>.up, #addInfoBtn:checked ~ .chLabel>.up, #reviewBtn:checked ~ .chLabel>.up{ 
+    display: inline-block; 
+} 

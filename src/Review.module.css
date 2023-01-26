@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.rvWraps{
+    margin: 100px 0 100px 0;
+}
+
+.reviewWrap{
+    width: 1260px;
+    margin: 0 auto;
+}
+
+
+.bar1{
+    height: 10px;
+    background-color: #E7E7E7;
+    border-radius: 10px;
+}
+
+.bar2{
+
+    height: 10px;
+    background-color: #E7E7E7;
+    border-radius: 10px;
+}
+
+.point{
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: #000;
+    border-radius: 50%;
+    position: relative;
+    bottom: 8px;
+    left: 50%;
+}
+
+.reviewTop{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.star h2{
+    font-size: 48px;
+}
+
+.star h3{
+    font-size: 38px;
+}
+
+.reviewMid{
+    display: flex;
+}
+
+.reviewMid div{
+    width: 400px;
+    margin: 10px;
+}
+
+.reviewMid div p{
+    font-weight: bold;
+}
+
+.triple{
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    font-weight: 500;
+    color: #8C8C8C;
+}
+
+.triple div{
+    width: 100%;
+}
+
+.reviewMid div p{
+    width: 430px;
+    text-align: center;
+}
+
+
+.reviewBotom{
+    margin-top: 30px;
+}
+
+.reviewSort{
+    display: flex;
+}
+
+.reviewSort div{
+    margin-right: 30px;
+    padding: 10px 0;
+}
+
+.reviewSort select{
+    width: 175px;
+    padding: 10px 0;
+    border-style: none;
+}
+

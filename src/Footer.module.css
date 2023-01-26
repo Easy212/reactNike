@@ -1,0 +1,79 @@
+/* 푸터 공통 모듈 */
+footer {
+    background-color: #111;
+    color: #fff;
+}
+footer a {
+    color: #fff;
+}
+.f-top, .f-bottom {
+    width: 1024px;
+    margin: 0 auto;
+    padding: 40px 0;
+    font-size: 0.6875em;
+}
+.f-line {
+    border-top: 1px solid #333;
+}
+.f-top, .f-info {
+    display: flex;
+    /* 기본값 : start */
+    /* space-between : 간격 일정하게 나열 */
+    justify-content: space-between;
+}
+.f-mobile {
+    display: none;
+}
+.f-menu > li {
+    line-height: 30px;
+}
+.f-menu > li > a {
+    font-size: 0.8125em;
+}
+.f-sub li {
+    line-height: 24px;
+}
+.f-sub a {
+    color: #aaa;
+}
+.social .f-sub { 
+    display: flex;
+}
+.social .f-sub li {
+    width: 24px;
+    height: 24px;
+    border-radius: 12px;
+    text-align: center;
+    font-size: 0.8125em;
+    margin-right: 6px;
+    background-color: #444;
+}
+.f-bottom ul {
+    display: flex;
+    margin-bottom: 32px;
+}
+.f-bottom ul li {
+    font-size: 0.8125em;
+    margin-right: 16px;
+}
+.f-bottom p {
+    color: #aaa;
+    letter-spacing: 0.5px;
+}
+.f-info > p br:nth-child(1),
+.f-info > p br:nth-child(3),
+.f-info > p br:nth-child(6) {
+    display: none;
+}
+.inipay p:last-child {
+    display: flex;
+    align-items: center;
+    margin-top: 32px;
+}
+.inipay p:last-child img {
+    margin-left: 16px;
+}
+.inipay p:last-child a {
+    margin-left: 8px;
+    text-decoration: underline;
+}

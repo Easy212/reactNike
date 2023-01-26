@@ -1,0 +1,37 @@
+.swiper-slide {
+    position: relative;
+}
+/* slidePerView()를 위해 a영역과 그 안의 img 크기를 100%로 맞춰야 한다. */
+
+.featured-title {
+    font-size: 1.25em;
+    color: #111; 
+    font-weight: 400;
+    margin-top: 18px;
+    letter-spacing: -1px;
+}
+.featured-text {
+    font-size: 1em;
+    color: #757575;
+    /* line-height : px - px만큼 / 숫자 - 글자 갯수만큼 */
+    line-height: 19px;
+    margin-top: 8px;
+    letter-spacing: -0.5px;
+}
+.swiper-button-next::after{
+
+}
+
+.swiper-button-prev::after{
+ 
+}
+
+.swiper-button-prev{
+    
+    top: 1000px;
+}
+
+.swiper-pagination{
+    margin-top: 30px;
+}
+

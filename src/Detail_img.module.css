@@ -1,0 +1,19 @@
+.detailLeft{
+    width: 880px;
+    height: auto;
+}
+
+.detailWrap{
+    display: flex;
+    flex-wrap: wrap;
+}
+.detailImg {
+    height: auto;
+    margin: 5px 5px 0 0;
+}
+
+.detailImg img{
+    width: 430px;
+    height: 100%
+    
+}
