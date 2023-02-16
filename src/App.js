@@ -13,7 +13,7 @@ import RevieWrite from './component/RevieWrite';
 import {BrowserRouter, Route, Routes} from 'react-router-dom'
 
 const wait = () =>{
-  alert('페이지를 준비중입니다').preventDefault();
+  alert('페이지를 준비중입니다');
 }
 
 function App() {

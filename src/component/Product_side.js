@@ -6,16 +6,16 @@ function Product_side({wait}){
         <div className={styles.category}>
             <div className={styles.category_list}>
               <ul>
-                <li><Link onClick={() => wait()} to="#">라이프 스타일</Link></li>
-                <li><Link onClick={() => wait()} to="#">조던</Link></li>
-                <li><Link onClick={() => wait()} to="#">러닝</Link></li>
-                <li><Link onClick={() => wait()} to="#">농구</Link></li>
-                <li><Link onClick={() => wait()} to="#">축구</Link></li>
-                <li><Link onClick={() => wait()} to="#">트레이닝 및 짐</Link></li>
-                <li><Link onClick={() => wait()} to="#">스케이트보딩</Link></li>
-                <li><Link onClick={() => wait()} to="#">골프</Link></li>
-                <li><Link onClick={() => wait()} to="#">테니스</Link></li>
-                <li><Link onClick={() => wait()} to="#">샌들 & 슬리퍼</Link></li>
+                <li><Link onClick={() => wait()} >라이프 스타일</Link></li>
+                <li><Link onClick={() => wait()} >조던</Link></li>
+                <li><Link onClick={() => wait()} >러닝</Link></li>
+                <li><Link onClick={() => wait()} >농구</Link></li>
+                <li><Link onClick={() => wait()} >축구</Link></li>
+                <li><Link onClick={() => wait()} >트레이닝 및 짐</Link></li>
+                <li><Link onClick={() => wait()} >스케이트보딩</Link></li>
+                <li><Link onClick={() => wait()} >골프</Link></li>
+                <li><Link onClick={() => wait()} >테니스</Link></li>
+                <li><Link onClick={() => wait()} >샌들 & 슬리퍼</Link></li>
               </ul>
             </div>
 

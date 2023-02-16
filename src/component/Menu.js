@@ -28,9 +28,9 @@ function Menu({wait}){
             </ul>
           </div>
           <ul className={styles.customer}>
-            <li><Link to="#"><img src="images/shopping-bag.svg" alt="장바구니"/>장바구니</Link></li>
-            <li><Link to="#"><img src="images/truck.svg" alt="주문배송"/>주문배송</Link></li>
-            <li><Link to="#"><img src="images/help-circle.svg" alt="고객센터"/>고객센터</Link></li>
+            <li><Link onClick={() => wait()}><img src="images/shopping-bag.svg" alt="장바구니"/>장바구니</Link></li>
+            <li><Link onClick={() => wait()}><img src="images/truck.svg" alt="주문배송"/>주문배송</Link></li>
+            <li><Link onClick={() => wait()}><img src="images/help-circle.svg" alt="고객센터"/>고객센터</Link></li>
           </ul>
         </div>
       </div>
