@@ -39,6 +39,10 @@
     display: block;
     margin-bottom: 10px;
 }
+
+.checkLabel:hover{
+    cursor: pointer;
+}
 #sex_btn, #price_btn, #color_btn, #brand_btn, #shoesHeight_btn, #sport_btn{
     display: none;
 }

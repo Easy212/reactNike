@@ -1,0 +1,29 @@
+
+.product_item{
+  width: 30%;
+  aspect-ratio: 4/5;
+  margin: 10px;
+}
+.product_item .item_img{
+  width: 100%;
+  aspect-ratio: 1/1;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+.product_item .item_img img{
+  width: 100%;
+  transition: .3s;
+}
+.product_item:hover .item_img img{
+  transform: translate(10px, 20px) scale(1.1) ;
+}
+.product_item .TextBox{
+  font-weight: 400;
+}
+.product_item .TextBox .productSubName{
+  color:#666;
+}
+.product_item .TextBox .price{
+  margin-top: 10px;
+  color: #000;
+}

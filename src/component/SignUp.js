@@ -1,7 +1,7 @@
 import React from 'react'
-import { Modal, Button } from 'react-bootstrap'
+import { Modal } from 'react-bootstrap'
 /*import 'bootstrap/dist/css/bootstrap.min.css'*/
-import './SignUp.css'
+import '../css/SignUp.css'
 
 const SignUp = ({show, onHide}) => {
   return (
@@ -19,30 +19,30 @@ const SignUp = ({show, onHide}) => {
       </Modal.Header>
       <Modal.Body>
         <form action="" method="post" id="joinForm" name="joinForm">
-          <div class="formSign">
-            <p><strong class="require">필수</strong>는 필수 입력 사항 입니다.</p>
+          <div className="formSign">
+            <p><strong className="require">필수</strong>는 필수 입력 사항 입니다.</p>
           </div>
-          <div class="baseInfo">
+          <div className="baseInfo">
             <h3>기본정보</h3>
             <fieldset>
-              <label for="name">성명<strong class="require">필수</strong></label>
+              <label for="name">성명<strong className="require">필수</strong></label>
               <input type="text" id="name" name="name" placeholder="성함을 입력해주세요"/>
             </fieldset>
             <fieldset>
-              <label for="id">아이디<strong class="require">필수</strong></label>
-              <input type="text" id="id" name="id" minlength="4" maxlength="16" size="30" required placeholder="영문 숫자 포함 4~16자"/>
-              <a href="pop_idCheck.html" class="idCheck">ID 중복확인</a>
+              <label for="id">아이디<strong className="require">필수</strong></label>
+              <input type="text" id="id" name="id" minLength="4" maxLength="16" size="30" required placeholder="영문 숫자 포함 4~16자"/>
+              <a href="pop_idCheck.html" className="idCheck">ID 중복확인</a>
             </fieldset>
             <fieldset>
-              <label for="pw">비밀번호<strong class="require">필수</strong></label>
-              <input type="password" id="pw" name="pw" minlength="10" size="30" required placeholder="영문 숫자 포함 10자이상"/>
+              <label for="pw">비밀번호<strong className="require">필수</strong></label>
+              <input type="password" id="pw" name="pw" minLength="10" size="30" required placeholder="영문 숫자 포함 10자이상"/>
             </fieldset>
             <fieldset>
-              <label for="confirmPw">비밀번호확인<strong class="require">필수</strong></label>
-              <input type="password" id="confirmPw" name="confirmPw"  minlength="10" size="30" required/>
+              <label for="confirmPw">비밀번호확인<strong className="require">필수</strong></label>
+              <input type="password" id="confirmPw" name="confirmPw"  minLength="10" size="30" required/>
             </fieldset>
 
-            <fieldset class="tel_selct">
+            <fieldset className="tel_selct">
               <label>연락처</label>
               <select id="hp1" name="hp1">
                 <option value="010">010</option>
@@ -55,27 +55,27 @@ const SignUp = ({show, onHide}) => {
             </fieldset>
             
             <fieldset>
-              <label for="email">이메일<strong class="require">필수</strong></label>
+              <label for="email">이메일<strong className="require">필수</strong></label>
               <input type="email" id="email" name="email" size="30" required placeholder="입력 예) easy@naver.com"/>
             </fieldset>
           </div>
 
-          <div class="addInfo">
+          <div className="addInfo">
             <h3>추가정보</h3>
-            <fieldset class="sex" >
+            <fieldset className="sex" >
               <label>성별</label>
-              <input type="radio" id="sexInfo1" name="sexInfo" value="남자" checked/>
+              <input type="radio" id="sexInfo1" name="sexInfo" value="남자" defaultChecked/>
               <label>남자</label>
               <input type="radio" id="sexInfo2" name="sexInfo" value="여자"/>
               <label>여자</label>
             </fieldset>
 
-            <fieldset class="birth">
+            <fieldset className="birth">
               <label>생년월일</label>
               <input type="date" id="birth" name="birth" />
             </fieldset>
             
-            <fieldset class="region">
+            <fieldset className="region">
               <label>지역</label>
               <select name="region">
                 <option value="선택안함">선택</option>
@@ -98,7 +98,7 @@ const SignUp = ({show, onHide}) => {
               </select>
             </fieldset>
 
-            <fieldset class="shoesSize">
+            <fieldset className="shoesSize">
               <label>신발 사이즈</label>
               <select name="shoesSize">
                 <option value="선택안함">선택</option>
@@ -121,8 +121,8 @@ const SignUp = ({show, onHide}) => {
                 <option value="300">300</option>
               </select>
             </fieldset>
-            <div class="btnJoinArea">
-              <button type="submit" class="btnOk">회원가입</button>
+            <div className="btnJoinArea">
+              <button type="submit" className="btnOk">회원가입</button>
             </div>
           </div>
         </form>

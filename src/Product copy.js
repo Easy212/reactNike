@@ -84,6 +84,7 @@ function Product(){
                   <div className="text">가격대<span></span></div>
                   <div className="btn"><i className='bx bx-chevron-down'></i></div>
                 </div>
+                
                 <form action="#">
                   <label><input type="checkbox" name="50000under" id="50000under"/>0 - 50,000원</label>
                   <label><input type="checkbox" name="100000under" id="100000under"/>50,000 - 100,000원</label>

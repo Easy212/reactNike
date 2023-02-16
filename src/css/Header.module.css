@@ -121,9 +121,11 @@ nav {
     white-space: nowrap;
     justify-content: center;
     margin:0px 23px 0;
-    
-   
 }
+
+.main_menu > li > .man{
+    font-weight: bold;
+} 
 .main_menu > li:last-child:hover > a {
     border-bottom: 2px solid #fff;
 }
@@ -150,14 +152,21 @@ nav {
 }
 .sub-menu li {
     line-height: 26px;
+    
+}
+
+.sub-menu .mShoes{
+    color: #8C8C8C;
+    font-weight: bold;
 }
 .sub-menu li a {
     font-size: 0.8125em;
-    color: #757575;
+    color: #aaa;
     /* 글자간격 */
     letter-spacing: -0.2px;
-   
 }
+
+
 .all {
     display: none;
 }

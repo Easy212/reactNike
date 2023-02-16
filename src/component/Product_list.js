@@ -1,9 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom"
-import styles from './Product_list.module.css';
+import styles from '../css/Product_list.module.css';
 
 
-function ProductMenu(props){
+function Product_list(props){
     return(
         <div className={styles.product_item}>
             <Link to={props.link}>
@@ -25,4 +25,4 @@ function ProductMenu(props){
       </div>
     )
 }
-export default ProductMenu
+export default Product_list

@@ -1,5 +1,5 @@
-import React, {useState}from "react";
-import styles from './RevieWrite.module.css';
+import React from "react";
+import styles from '../css/RevieWrite.module.css';
 
 
 function RevieWrite(){
@@ -19,12 +19,6 @@ function RevieWrite(){
 
                 <form onSubmit={e=>{
                     e.preventDefault();
-                    const rating = e.target.rating.value;
-                    const revText = e.target.revText.value;
-                    const revtitle = e.target.revTitle.value;
-                    const radioSize = e.target.radioSize.value;
-                    const radioRelax = e.target.radioRelax.value;
-                    const radioLife = e.target.radioLife.value;
                 }}>
                     <div className={styles.writeContent}>
                         <div className={styles.grade}>
@@ -124,7 +118,7 @@ function RevieWrite(){
                             </div>
                             <div className={styles.writeImgC}>
                             <label htmlFor={styles.imgUpload}>
-                                <div className={styles.btnUpload}><span><img src="images/uploadImg.png" alt="사진 업로드 아이콘" className={styles.upIcon}/>사진 추가</span></div>
+                                <div className={styles.btnUpload}><span><img src="https://easy212.github.io/reactNike/images/uploadImg.png" alt="사진 업로드 아이콘" className={styles.upIcon}/>사진 추가</span></div>
                             </label>
                             <input type="file" id={styles.imgUpload}/>
                             </div>

@@ -1,9 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import styles from "./Detail_content.module.css"; 
+import styles from "../css/Detail_content.module.css"; 
 
 
-function Detail_content(){
+function Detail_content({wait}){
 
 
     return(
@@ -51,10 +51,10 @@ function Detail_content(){
              
               </div>
               <div className={styles.shoppingBasket}>
-                <button>장바구니</button>
+                <button  onClick={() => wait()}>장바구니</button>
               </div>
               <div className={styles.wish}>
-                <button>위시리스트<img src="images/heart.svg" alt="위시리스트 아이콘"/></button>
+                <button  onClick={() => wait()}>위시리스트<img src="images/heart.svg" alt="위시리스트 아이콘"/></button>
               </div>
               <div className={styles.detailInfo}>
                 <p>친숙한 인기 아이템이 나이키 BRSB로 재탄생했습니다. 

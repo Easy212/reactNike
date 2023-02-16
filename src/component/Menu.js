@@ -1,11 +1,10 @@
-import React, {useState, Button} from "react";
+import React, {useState} from "react";
 import { Link } from "react-router-dom";
 import SignUp from './SignUp';
-import './App.css';
-import styles from './Menu.module.css';
+import styles from '../css/Menu.module.css';
 /*import 'bootstrap/dist/css/bootstrap.min.css';*/
 
-function Menu(){
+function Menu({wait}){
     const [signUpOn, setSignUpOn] = useState(false);
     return(
       <>
@@ -16,16 +15,16 @@ function Menu(){
         <div className={styles['h-top']}>
           <div className={styles['jordan-logo']}>
             <Link to="/">
-              <img src="images/AIR-JORDAN-LOGO.svg" alt="에어조던로고"/>
+              <img src="https://easy212.github.io/reactNike/images/AIR-JORDAN-LOGO.svg" alt="에어조던로고"/>
               <span>Jordan</span>
             </Link>
           </div>
           <div className={styles['top-menu-area']}>
             <h4 className={styles['top-menu-title']}>나이키 멤버만을 위한 트별한 혜택을 알아보세요</h4>
             <ul className={styles['top-menu']}>
-              <li><Link to="#">고객센터</Link></li>
+              <li><Link onClick={() => wait()}>고객센터</Link></li>
               <li><Link onClick={() => setSignUpOn(true)}>멤버가입</Link></li>
-              <li><Link to="#">로그인</Link></li>
+              <li><Link onClick={() => wait()}>로그인</Link></li>
             </ul>
           </div>
           <ul className={styles.customer}>

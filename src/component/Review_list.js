@@ -1,5 +1,5 @@
 import React from "react";
-import styles from './Review_list.module.css';
+import styles from '../css/Review_list.module.css';
 
 
 function Review_list(props){

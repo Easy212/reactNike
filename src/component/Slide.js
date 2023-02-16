@@ -1,14 +1,12 @@
-import React, { Component } from 'react';
-import styles from './Slide.module.css';
-import { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
+import React from 'react';
+import styles from '../css/Slide.module.css';
+import { Navigation} from 'swiper';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/navigation';
-import 'swiper/css/pagination';
-import 'swiper/css/scrollbar';
 
 
 function Slide(props) {

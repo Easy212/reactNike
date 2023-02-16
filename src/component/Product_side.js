@@ -1,21 +1,21 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import styles from './Product_side.module.css';
-function Product_side(){
+import styles from '../css/Product_side.module.css';
+function Product_side({wait}){
     return(
         <div className={styles.category}>
             <div className={styles.category_list}>
               <ul>
-                <li><Link to="#">라이프 스타일</Link></li>
-                <li><Link to="#">조던</Link></li>
-                <li><Link to="#">러닝</Link></li>
-                <li><Link to="#">농구</Link></li>
-                <li><Link to="#">축구</Link></li>
-                <li><Link to="#">트레이닝 및 짐</Link></li>
-                <li><Link to="#">스케이트보딩</Link></li>
-                <li><Link to="#">골프</Link></li>
-                <li><Link to="#">테니스</Link></li>
-                <li><Link to="#">샌들 & 슬리퍼</Link></li>
+                <li><Link onClick={() => wait()} to="#">라이프 스타일</Link></li>
+                <li><Link onClick={() => wait()} to="#">조던</Link></li>
+                <li><Link onClick={() => wait()} to="#">러닝</Link></li>
+                <li><Link onClick={() => wait()} to="#">농구</Link></li>
+                <li><Link onClick={() => wait()} to="#">축구</Link></li>
+                <li><Link onClick={() => wait()} to="#">트레이닝 및 짐</Link></li>
+                <li><Link onClick={() => wait()} to="#">스케이트보딩</Link></li>
+                <li><Link onClick={() => wait()} to="#">골프</Link></li>
+                <li><Link onClick={() => wait()} to="#">테니스</Link></li>
+                <li><Link onClick={() => wait()} to="#">샌들 & 슬리퍼</Link></li>
               </ul>
             </div>
 
