@@ -1,9 +1,10 @@
 import React from "react";
 import styles from '../css/Review.module.css';
-import Review_list from "./Review_list";
+import ReviewList from "./ReviewList";
 
 
-function Review(){
+function Review({reviewList}){
+
     return(
       <div className={styles.rvWraps} >
         <div className={styles.reviewWrap}>
@@ -72,18 +73,12 @@ function Review(){
           </div>
           
         </div>
-        <Review_list rating='★★★★★' size='보통' relax='편안함' life='보통' title='구매후기' 
-                     content='배송도 빠르구 디자인 사이즈 원단 다만족합니다 주문하실때 반업이나 한사이즈 크게주문하세요
-                              주문하실때 후회안하실듯 하네요' date='2023.01.01'/>
-        <Review_list rating='★★★★☆' size='큼' relax='편안한' life='내구성 좋음' title='좋아요' 
-                     content='250 치수 반업해서 255로 구매했어요!! 신으면 앞쪽 엄지손가락 두께만큼 남는거같아요 신다보니 편하고 이뻐요~' date='2023.01.03'/>
-        <Review_list rating='★★★☆☆' size='작음' relax='편안한' life='내구성 좋음' title='작아요' 
-                     content='배송도 빠르구 디자인 사이즈 원단 다만족합니다 주문하실때 반업이나 한사이즈 크게주문하세요
-                              주문하실때 후회안하실듯 하네요' date='2023.01.09'/>
-        <Review_list rating='★★☆☆☆' size='작음' relax='편하지 않은' life='보통' title='구매후기' 
-                     content='배송도 빠르구 디자인 사이즈 원단 다만족합니다 주문하실때 반업이나 한사이즈 크게주문하세요
-                              주문하실때 후회안하실듯 하네요' date='2023.01.10'/>
-        <Review_list/>        
+        {reviewList.map(review => (
+              <ReviewList
+                review={review} key={review.id}
+              />
+              ))}
+          
       </div>
     )
 }

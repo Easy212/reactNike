@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import styles from "../css/Detail_content.module.css"; 
 
 
-function Detail_content({wait}){
+function Detail_content({wait, reviewList}){
 
 
     return(
@@ -108,12 +108,10 @@ function Detail_content({wait}){
                 
                 <div className={styles.reviewOpen}>
                   <div className={styles.reviewOpenCon}>
-                    <h4>구매후기</h4>
-                    <span className={styles.rStar}>★★★★★</span> <span className={styles.rId}>ididid</span> <span className={styles.rDate}>2012년01월01일</span>
+                    <h4>{reviewList[0].title}</h4>
+                    <span className={styles.rStar}>{reviewList[0].rating}</span> <span className={styles.rId}>ididid</span> <span className={styles.rDate}>{reviewList[0].date}</span>
                     <p>
-                      다만족합니다
-                      주문하실때 반업이나 한사이즈 크게주문하세요
-                      주문하실때 후회안하실듯 하네요
+                      {reviewList[0].content}
                     </p>
                   </div>
                   <p><Link to="/RevieWrite">리뷰 작성하기</Link></p>

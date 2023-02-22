@@ -3,22 +3,22 @@ import { Link } from "react-router-dom"
 import styles from '../css/Product_list.module.css';
 
 
-function Product_list(props){
+function Product_list({product}){
     return(
         <div className={styles.product_item}>
-            <Link to={props.link}>
+            <Link to={product.link}>
                 <div className={styles.item_img}>
-                    <img src={props.img} alt=""/>
+                    <img src={product.img} alt=""/>
                 </div>
                 <div className={styles.TextBox}>
                     <div className={styles.productName}>
-                        {props.name}
+                        {product.name}
                     </div>
                     <div className={styles.productSubName}>
-                        {props.category}
+                        {product.category}
                     </div>
                     <div className={styles.price}>
-                        {props.price}
+                        {product.price}
                     </div>
                 </div>
             </Link>
