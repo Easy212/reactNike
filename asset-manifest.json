@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/reactNike/static/css/main.33d27257.css",
-    "main.js": "/reactNike/static/js/main.a20fed2b.js",
+    "main.js": "/reactNike/static/js/main.ed4eb656.js",
     "static/js/787.5480e000.chunk.js": "/reactNike/static/js/787.5480e000.chunk.js",
     "index.html": "/reactNike/index.html",
     "main.33d27257.css.map": "/reactNike/static/css/main.33d27257.css.map",
-    "main.a20fed2b.js.map": "/reactNike/static/js/main.a20fed2b.js.map",
+    "main.ed4eb656.js.map": "/reactNike/static/js/main.ed4eb656.js.map",
     "787.5480e000.chunk.js.map": "/reactNike/static/js/787.5480e000.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.33d27257.css",
-    "static/js/main.a20fed2b.js"
+    "static/js/main.ed4eb656.js"
   ]
 }
