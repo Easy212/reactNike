@@ -28,11 +28,10 @@ function Review_list({review}){
 
             <div className={styles.rvRight}>
               <div className={styles.rvContentWrap}>
+                <h4>{review.title}</h4>
                 <div className={styles.rvContent}>
-                  <h4>{review.title}</h4>
-                  <p>
-                    {review.content}
-                  </p>
+                  <p className={styles.rvText}>{review.content}</p>
+                  <p className={styles.rvUser}>ID: {review.user}</p>
                   <p className={styles.rvDate}>{review.date}</p>
                 </div>
               </div>

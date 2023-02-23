@@ -109,7 +109,7 @@ function Detail_content({wait, reviewList}){
                 <div className={styles.reviewOpen}>
                   <div className={styles.reviewOpenCon}>
                     <h4>{reviewList[0].title}</h4>
-                    <span className={styles.rStar}>{reviewList[0].rating}</span> <span className={styles.rId}>ididid</span> <span className={styles.rDate}>{reviewList[0].date}</span>
+                    <span className={styles.rStar}>{reviewList[0].rating}</span> <span className={styles.rId}>{reviewList[0].user}</span> <span className={styles.rDate}>{reviewList[0].date}</span>
                     <p>
                       {reviewList[0].content}
                     </p>

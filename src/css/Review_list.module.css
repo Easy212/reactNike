@@ -47,19 +47,23 @@
     width: 300px;
 }
 
-.rvContent h4{
-    font-size: 20px;
+.rvContent .rvTitle{
+    font-size: 18px;
     font-weight: bold;
     margin: 5px 0;
 }
 
-.rvContent p{
+.rvContent .rvText{
     font-size: 16px;
     font-weight: 500;
     line-height: 32px;
+    margin: 20px 0;
 }
-
-.rvDate{
-    font-size: 10px;
+.rvContent .rvUser{
+    font-size: 14px;
+    margin: 5px 0;
+}
+.rvContent .rvDate{
+    font-size: 15px;
     color: #8C8C8C;
 }

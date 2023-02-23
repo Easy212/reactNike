@@ -12,7 +12,7 @@ function Review({reviewList}){
             <div className={styles.star}> 
               <h2>★★★★★</h2>
             </div>
-            <h3>3개의 리뷰</h3>
+            <h3>{reviewList.length}개의 리뷰</h3>
           </div>
            
           <div className={styles.reviewMid}>
